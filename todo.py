@@ -13,6 +13,6 @@ for path, dirs, files in os.walk(notes_path):
                     content = content + line + " [[" + filename[:-3] + "]]" + '\n'
             f.close()
 print(content)
-f = open(notes_path + 'TODO.md', "+w")
+f = open(notes_path + 'TODO.md', "w")
 f.write(content)
 f.close()
